@@ -1,0 +1,50 @@
+GET http://127.0.0.1:5000/users
+
+###
+
+GET  http://127.0.0.1:5000/users/6530056cba85c10d2bf90fa4
+
+###
+GET http://127.0.0.1:5000/users/name/paul01
+
+###
+POST http://127.0.0.1:5000/users
+Content-Type: application/json
+
+{
+    "name":"marys",
+    "password":"grapses",
+    "highscore":12
+}
+
+###
+POST http://127.0.0.1:5000/users/login
+Content-Type: application/json
+
+{
+    "session_id": "65385ed7558955683978cd95"
+    //"name":"jack",
+    //"password":"f5903f51e341a783e69ffc2d9b335048716f5f040a782a2764cd4e728b0f74d9"
+}
+
+###
+DELETE http://127.0.0.1:5000/users/653104a07a7b572733eb249e
+
+###
+PATCH http://127.0.0.1:5000/users/653107a1785f7c1a9cda8b4e
+Content-Type: application/json
+
+{
+    "password":"f5903f51e341a783e69ffc2d9b335048716f5f040a782a2764cd4e728b0f74d9",
+    "highscore":"1"
+}
+
+###
+POST http://127.0.0.1:5000/users/session
+Content-Type: application/json
+
+{
+    "session_id": "6538e58cbaebe71cc35daddb"
+    //"name":"jack",
+    //"password":"f5903f51e341a783e69ffc2d9b335048716f5f040a782a2764cd4e728b0f74d9"
+}
